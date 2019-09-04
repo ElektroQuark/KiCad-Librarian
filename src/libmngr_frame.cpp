@@ -4203,7 +4203,7 @@ class wxDirTraverserTree : public wxDirTraverser
 public:
     wxDirTraverserTree(wxArrayString* pathlist) : m_pathlist(pathlist) { }
 
-    virtual wxDirTraverseResult OnFile(const wxString& /*filename*/) wxOVERRIDE {
+    virtual wxDirTraverseResult OnFile(const wxString& filename) wxOVERRIDE {
         return wxDIR_CONTINUE;
     }
     virtual wxDirTraverseResult OnDir(const wxString& dirname) wxOVERRIDE {
